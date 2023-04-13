@@ -54,3 +54,9 @@ During form inputs and submission some sort of global combine publisher that can
 }
 
 ```
+
+
+### Questions
+
+- [ ] I want to have in app data storage, I am leanding towards using Realm, what are your thoughts?
+- [ ] I want to allow customers to provide their credit card information (using Stripe) and once we get the payment method tokenized sending it our API to store.
