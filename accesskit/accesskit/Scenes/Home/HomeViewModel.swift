@@ -13,4 +13,8 @@ final class HomeViewModel: ObservableObject {
     init(router: HomeRouter) {
         self.router = router
     }
+    
+    func didTap(on item: String) {
+        router.showDetails(for: item)
+    }
 }

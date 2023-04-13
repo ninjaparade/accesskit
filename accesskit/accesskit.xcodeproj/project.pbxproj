@@ -33,6 +33,9 @@
 		3D328AE929E84F0A0023F76F /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D328AE829E84F0A0023F76F /* LocationsViewModel.swift */; };
 		3D328AEB29E84F2C0023F76F /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D328AEA29E84F2C0023F76F /* LocationsView.swift */; };
 		3D328AEE29E84F530023F76F /* LocationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D328AED29E84F530023F76F /* LocationsRouter.swift */; };
+		3D328AF129E85E2D0023F76F /* HomeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D328AF029E85E2D0023F76F /* HomeDetailViewModel.swift */; };
+		3D328AF329E85E450023F76F /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D328AF229E85E450023F76F /* HomeDetailView.swift */; };
+		3D328AF629E85E6B0023F76F /* HomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D328AF529E85E6B0023F76F /* HomeDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		3D328AE829E84F0A0023F76F /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		3D328AEA29E84F2C0023F76F /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		3D328AED29E84F530023F76F /* LocationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRouter.swift; sourceTree = "<group>"; };
+		3D328AF029E85E2D0023F76F /* HomeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewModel.swift; sourceTree = "<group>"; };
+		3D328AF229E85E450023F76F /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
+		3D328AF529E85E6B0023F76F /* HomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +237,7 @@
 		3D328AD729E84D310023F76F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3D328AEF29E85E1C0023F76F /* Detail */,
 				3D328ADC29E84D8F0023F76F /* Router */,
 				3D328AD829E84D570023F76F /* HomeViewModel.swift */,
 				3D328ADA29E84D760023F76F /* HomeView.swift */,
@@ -278,6 +285,24 @@
 			isa = PBXGroup;
 			children = (
 				3D328AED29E84F530023F76F /* LocationsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3D328AEF29E85E1C0023F76F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3D328AF429E85E590023F76F /* Router */,
+				3D328AF029E85E2D0023F76F /* HomeDetailViewModel.swift */,
+				3D328AF229E85E450023F76F /* HomeDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3D328AF429E85E590023F76F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3D328AF529E85E6B0023F76F /* HomeDetailRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -420,12 +445,15 @@
 				3D328AC429E8441B0023F76F /* StartUpCoordinator.swift in Sources */,
 				3D328ADE29E84DB90023F76F /* HomeRouter.swift in Sources */,
 				3D328ACF29E849060023F76F /* EmailView.swift in Sources */,
+				3D328AF129E85E2D0023F76F /* HomeDetailViewModel.swift in Sources */,
 				3D328AD629E84B910023F76F /* AppTabBarController.swift in Sources */,
 				3D328AC129E843280023F76F /* AppRouter.swift in Sources */,
 				3D328AD429E8493C0023F76F /* EmailRouter.swift in Sources */,
 				3D328AE929E84F0A0023F76F /* LocationsViewModel.swift in Sources */,
 				3D328AEE29E84F530023F76F /* LocationsRouter.swift in Sources */,
+				3D328AF629E85E6B0023F76F /* HomeDetailRouter.swift in Sources */,
 				3D328A9329E8411D0023F76F /* ViewController.swift in Sources */,
+				3D328AF329E85E450023F76F /* HomeDetailView.swift in Sources */,
 				3D328AE129E84E030023F76F /* AccountViewModel.swift in Sources */,
 				3D328AD929E84D570023F76F /* HomeViewModel.swift in Sources */,
 				3D328A8F29E8411D0023F76F /* AppDelegate.swift in Sources */,

@@ -6,5 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
-final class HomeRouter: AppRouter {}
+final class HomeRouter: AppRouter {
+    func showDetails(for item: String) {
+        let router = HomeDetailRouter(navigationController: navigationController)
+        let homeDetailViewModel = HomeDetailViewModel(item: item, router: router)
+        let homeDetailView = HomeDetailView().environmentObject(homeDetailViewModel)
+        let homeDetailViewController = UIHostingController(rootView: homeDetailView)
+        show(homeDetailViewController)
+    }
+}
